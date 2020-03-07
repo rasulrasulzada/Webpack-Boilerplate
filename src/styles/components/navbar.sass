@@ -1,0 +1,305 @@
+.nav-wrapper
+  left: 0
+  right: 0
+  // background-color: rgba(0, 0, 0, 0.5)
+
+.my-navbar
+  // position: absolute
+  // width: 100%
+  // background-color: rgba(0, 0, 0, 0.5)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 10rem
+  z-index: 100
+
+
+
+   
+
+.nv-link--active
+  border-top: solid 4px $main-color!important
+
+.hamburger
+  width: 30px
+  height: 30px
+  display: none
+  position: relative
+  align-items: center
+  justify-content: space-evenly
+  flex-direction: column
+  z-index: 500
+  transition: .5s ease-in-out
+  cursor: pointer
+  div
+    // position: absolute
+    display: block
+    width: 100%
+    height: 3px
+    background-color: white
+  // span:first-child
+  //   top: 0
+  //   background: blue
+  // span:nth-child(2)
+  //   top: 50%
+  //   transform: translateY(-50%)
+  // span:last-child
+  //   bottom: 0
+  //   background: red
+  // div
+  //     position: relative
+  //     flex: none
+  //     width: 17px
+  //     height: 1px
+  //     background-color: white
+  //     display: flex
+  //     align-items: center
+  //     justify-content: center
+  //     transition: all 0.2s ease
+  
+
+.hamburger-active
+  justify-content: center
+  // span:first-child
+  //   transform: rotate(135deg)
+  // span:nth-child(2)
+  //   opacity: 0
+  //   left: -60px
+  // span:last-child
+  //   transform: rotate(-135deg)
+
+  div
+    &:first-of-type
+      transform: rotate(135deg)
+    &:nth-of-type(2)
+      display: none
+    &:last-of-type
+      transform: rotate(-135deg)
+
+.logo-link
+  width: 17.8rem
+  height: 6rem
+  // transition: .4s all
+
+
+.logo
+    width: inherit
+    // background-image: url("../../img/gsplogowhite.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.nv-collapse
+  display: flex
+  align-items: center
+  height: 100%
+
+.nv-list
+  margin: 0
+  display: flex
+  align-items: center
+  flex-wrap: nowrap
+  // transition: .4s all
+  
+
+.nv-link
+  height: 100%
+  text-decoration: none
+  // padding: 0 1.7rem
+  font: 500 15px Montserrat
+  color: white
+  transition: .4s ease
+  &:hover
+    color: #1E60A0
+
+
+
+
+.search
+  display: flex
+  align-items: center
+
+.search-form
+  display: flex
+  align-items: center
+
+.search-btn
+    font-size: 17px
+    margin: 0
+    color: white
+    cursor: pointer
+    .search-icon
+      padding: 2px 0
+
+.search-icon-passiv
+  display: none!important
+
+.search-input
+  border: 0
+  outline: 0
+  font: 400 18px $main-font
+  color: white
+  background-color: transparent
+  width: 0
+  // transition: .4s all
+
+.times-icon
+  color: white
+  font-size: 25px
+  padding: 0 7px
+  cursor: pointer
+  display: none
+
+.search-active
+  border: 0
+  .logo-link
+    // max-width: 0
+    // opacity: 0
+    // z-index: -5
+  .nv-collapse
+    .nv-list
+      max-width: 0
+      opacity: 0
+      z-index: -1
+      .nv-link
+        max-width: 0
+        opacity: 0
+        z-index: -1
+    .search
+      height: 100%
+      .search-btn
+        cursor: default
+        .search-icon
+          padding: 2px 10px
+      .search-form
+        .search-input
+          width: 60rem
+          margin: 0 1.4rem
+        .times-icon
+          display: block
+                    
+.toggle-nav 
+  transform: scale(1)!important
+  // display: flex!important
+  // flex-direction: column!important
+  // position: absolute
+  // width: 100%!important
+  // height: auto
+  // margin-top: 10rem
+  // top: 0
+  // left: 0
+  // right: 0
+  // padding: 2rem 8rem
+  // background-color: black
+  // z-index: 200
+  // .nv-list
+  //   flex-direction: column
+  //   height: auto
+  //   width: 100%
+  //   .nv-item
+  //     height: auto
+  //     width: 100%
+  //     .nv-link
+  //       // border-bottom: solid 0.4px white
+  //       padding: 10px 0
+  // .search
+  //   width: 100%
+  //   margin-top: 1.5rem
+  //   display: flex
+  //   order: -1
+  //   .search-btn
+  //     .search-icon
+  //       padding: 2px 5px
+  //       display: none
+  //     // .shield
+  //     //   display: block
+  //   .search-form
+  //     width: 100%
+  //     background: #1d1d1f
+  //     border-radius: 7px
+  //     .search-icon-passiv
+  //       display: inline-block!important
+  //       font-size: 17px
+  //       color: gray
+  //       margin-left: 14px
+  //     .search-input
+  //       width: 100%
+  //       margin: 0
+  //       padding: 8px 14px
+  //       border-radius: 10px
+
+@media (max-width: 768px)
+  .hamburger
+    display: flex
+
+  .nv-collapse
+    // display: none
+    // width: 0
+    // transform: scaleX(0)
+    // transform-origin: right
+    // transition:  .5s
+    position: fixed
+    width: 100%
+    height: 60rem
+    padding: 2rem 8rem
+    top: 10rem
+    bottom: 0
+    left: 0
+    transform: scaleX(0)
+    transform-origin: right
+    transition: transform  .3s  
+    background: rgba(0,0,0, 0.8)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    // height: calc(100% - 90px)
+    .nv-list
+      flex-direction: column
+      height: auto
+      width: 100%
+      .nv-item
+        height: auto
+        width: 100%
+        .nv-link
+          // border-bottom: solid 0.4px white
+          padding: 10px 0
+    .search
+      width: 100%
+      margin-top: 1.5rem
+      display: flex
+      order: -1
+      .search-btn
+        .search-icon
+          padding: 2px 5px
+          display: none
+        // .shield
+        //   display: block
+      .search-form
+        width: 100%
+        background: #1d1d1f
+        border-radius: 7px
+        .search-icon-passiv
+          display: inline-block!important
+          font-size: 17px
+          color: gray
+          margin-left: 14px
+        .search-input
+          width: 100%
+          margin: 0
+          padding: 8px 14px
+          border-radius: 10px
+
+  .nv-link
+    height: auto
+
+// @media (min-width: 992px)
+//   .my-navbar
+//     max-width: 960px
+
+// @media (min-width: 768px)
+//   .my-navbar
+//     max-width: 720px
+
+// @media (min-width: 576px)
+//   .my-navbar
+//     max-width: 540px
