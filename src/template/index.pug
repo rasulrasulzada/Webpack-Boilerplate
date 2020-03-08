@@ -1,29 +1,8 @@
-extends ../pug_includes/head
+extends ../template_includes/head
 
 block unique-content
     main.main
-        .container.px-3.position-absolute.nav-wrapper
-            include ../pug_includes/navbar.pug
-        .d-flex.align-items-center
-           img.img-fluid.w-100(b-lazyload='', src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAABCAYAAADgt+FrAAAAEklEQVR42mMUZBa8yDAKhhUAAMLZAPhUuAzzAAAAAElFTkSuQmCC', data-src="../src/img/Salvatore ferragamo Logos.png")
-           .container.px-3.position-absolute.a-x-auto
-            .idea.bg-info.w-25
-                h4 CASPISOFTLINE
-                .idea-text
-                    | FAST AND SMOOTH TECHNICAL LAUNCH FOR YOUR STARTUP
-                button.idea-btn(type='button', data-toggle='modal', data-target='#ideaModal') SEND IDEA
-                #ideaModal.bg-success.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
-                    .modal-dialog.bg-info(role='document')
-                        .modal-content
-                        .modal-header
-                            h5#exampleModalLabel.modal-title Modal title
-                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                            span(aria-hidden='true') ×
-                        .modal-body
-                            | ...
-                        .modal-footer
-                            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-                            button.btn.btn-primary(type='button') Save changes
+    .test-div
 
 
         //- include footer.pug

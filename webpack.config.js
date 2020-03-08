@@ -31,13 +31,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "lib"),
     filename: "all.min.js"
-    // [chunkhash]: her build işleminde benzersiz bir çıktı üretmek için kullanılır.
   },
   module: {
     rules: [
       {
-        test: [/.js$/], // test => Hangi dosya tiplerinin işlemden geçeceğini belirttiğimiz property
-        exclude: /(node_modules)/, // exclude => Hangi klasörlerin işlemden geçmeyeceğini belirttiğimiz property
+        test: [/.js$/], 
+        exclude: /(node_modules)/, 
         use: {
           loader: "babel-loader",
           options: {
@@ -47,7 +46,7 @@ module.exports = {
       },
       {
         test: [/.css$|.scss$|.sass$/],
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', "sass-loader"]
       },
       {
         test: /\.html$/,
@@ -66,7 +65,7 @@ module.exports = {
         use: 'pug-loader'
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|svg)$/,
         use: [
           {
             loader: "file-loader",
@@ -87,10 +86,10 @@ module.exports = {
     //   template: "./src/template/index.pug",
     //   filename: "index.html",
     //   inject: true
-    //   // inject: true => Otomatik olarak build dosyasını script tag'ı olarak eklemeyi sağlar.
+    //   // inject: true 
     // }),
     new MiniCssExtractPlugin({
       filename: "styles.min.css"
-    })
+    }),
   ].concat(htmlPlugins)
 };
