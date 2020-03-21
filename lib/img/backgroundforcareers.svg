@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="337px" height="535px" viewBox="0 0 337 535" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.426432836 487.573076 0.426432836 487.573076 243.877763 0 243.877763"></polygon>
+        <linearGradient x1="50%" y1="37.5343139%" x2="86.144203%" y2="58.0087077%" id="linearGradient-3">
+            <stop stop-color="#4099CE" offset="0%"></stop>
+            <stop stop-color="#63A2C7" offset="50.2574126%"></stop>
+            <stop stop-color="#16538F" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="0.331146241 0.713103759 487.904406 0.713103759 487.904406 243.99945 0.331146241 243.99945"></polygon>
+        <linearGradient x1="50%" y1="37.5512602%" x2="86.144203%" y2="57.9978204%" id="linearGradient-6">
+            <stop stop-color="#4099CE" offset="0%"></stop>
+            <stop stop-color="#63A2C7" offset="36.7811647%"></stop>
+            <stop stop-color="#16538F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.12">
+        <g id="Home-page" transform="translate(0.000000, -2337.000000)">
+            <g id="Group-10" transform="translate(-1.000000, 760.000000)">
+                <g id="Group-9">
+                    <g id="careers" transform="translate(0.000000, 1577.000000)">
+                        <g id="Group-8">
+                            <g id="Group-3-Copy">
+                                <g id="Group-7" transform="translate(0.013748, 0.000000)">
+                                    <g transform="translate(143.905678, 197.985721) rotate(-298.000000) translate(-143.905678, -197.985721) translate(-205.094322, -46.014279)">
+                                        <g id="Group-3" transform="translate(0.000000, 0.718421)">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Clip-2"></g>
+                                            <path d="M62.5033917,243.877763 C62.5033917,144.055001 143.826298,62.8437925 243.784516,62.8437925 C343.744572,62.8437925 425.069317,144.055001 425.069317,243.877763 L487.573076,243.877763 C487.573076,109.637031 378.20988,0.42588209 243.784516,0.42588209 C109.360989,0.42588209 -0.000367669173,109.637031 -0.000367669173,243.877763 L62.5033917,243.877763 Z" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                                        </g>
+                                        <g id="Group-6" transform="translate(210.000000, 243.718421)">
+                                            <mask id="mask-5" fill="white">
+                                                <use xlink:href="#path-4"></use>
+                                            </mask>
+                                            <g id="Clip-5"></g>
+                                            <path d="M425.40083,0.713103759 C425.40083,100.466908 344.077924,181.62351 244.119706,181.62351 C144.15965,181.62351 62.8349056,100.466908 62.8349056,0.713103759 L0.331146241,0.713103759 C0.331146241,134.861735 109.694342,243.99945 244.119706,243.99945 C378.543233,243.99945 487.90459,134.861735 487.90459,0.713103759 L425.40083,0.713103759 Z" id="Fill-4" fill="url(#linearGradient-6)" mask="url(#mask-5)"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

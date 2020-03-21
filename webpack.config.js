@@ -49,46 +49,29 @@ module.exports = {
         test: [/.css$|.scss$|.sass$/],
         use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', "sass-loader"]
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: {
-              minimize: true //this minifies html
-            }
-          }
-        ],
-        exclude: path.resolve(__dirname, "src/index.html")
-      },
-      {
-        test: /\.pug$/,
-        use: 'pug-loader'
-      },
       // {
-      //   test: /\.(jpg|png|svg)$/,
+      //   test: /\.html$/,
       //   use: [
       //     {
-      //       loader: "file-loader",
+      //       loader: "html-loader",
       //       options: {
-      //         esModule: false,
-      //         name: "[name].[ext]",
-      //         outputPath: "img/",
-      //         publicPath: "img/"
+      //         minimize: true //this minifies html
       //       }
       //     }
-      //   ]
-      // }
+      //   ],
+      //   exclude: path.resolve(__dirname, "src/index.html")
+      // },
+      {
+        test: /\.pug$/,
+        loader: "pug-loader",
+        query: {
+          pretty: true //this stops to minify html
+        }
+      },  
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/template/index.pug",
-    //   filename: "index.html",
-    //   inject: true
-    //   // inject: true 
-    // }),
     new MiniCssExtractPlugin({
       filename: "styles.min.css"
     }),
